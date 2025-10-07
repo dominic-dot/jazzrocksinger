@@ -54,7 +54,6 @@
     nav a:hover{color:var(--yellow)}
 
     main{
-      align-items: flex-start; /* ensures cards only grow to their own height */
       margin-top:120px;
       padding:40px 10%;
       display:grid;
@@ -69,16 +68,7 @@
       padding:24px;
       box-shadow:0 0 20px rgba(255,212,0,0.08);
       backdrop-filter:blur(10px);
-      height: auto; /* ensures it fits content */
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
     }
-
-    /* Optional: center the "Share" link visually but keep spacing tight */
-    .card > div:last-child {
-      margin-top: 10px; /* smaller gap below the button */
-}
 
     .highlight h1{
       color:var(--yellow);
@@ -257,3 +247,4 @@
   </script>
 </body>
 </html>
+
