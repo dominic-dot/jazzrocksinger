@@ -3,50 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JazzRock Band</title>
+  <title>JazzRock Band | GRAMMY Consideration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#050505;
-      --glass: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.06);
       --yellow:#FFD400;
       --orange:#FF7A00;
-      --muted:rgba(255,255,255,0.6);
+      --muted:rgba(255,255,255,0.7);
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
       margin:0;
       font-family:'Inter',sans-serif;
       background:var(--bg);
       color:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
     }
 
     header{
       position:fixed;
       top:0;left:0;right:0;
-      background:rgba(10,10,10,0.8);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(255,255,255,0.05);
+      background:rgba(10,10,10,0.85);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(255,255,255,0.08);
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding:12px 40px;
+      padding:14px 50px;
       z-index:1000;
     }
     header .logo{
       font-weight:800;
       color:var(--yellow);
       letter-spacing:0.03em;
-      font-size:20px;
+      font-size:22px;
     }
     nav{
       display:flex;
-      gap:18px;
+      gap:20px;
     }
     nav a{
       color:var(--muted);
@@ -54,67 +51,88 @@
       font-weight:600;
       transition:color .2s;
     }
-    nav a:hover{
-      color:var(--yellow);
+    nav a:hover{color:var(--yellow)}
+
+    main{
+      align-items: flex-start; /* ensures cards only grow to their own height */
+      margin-top:120px;
+      padding:40px 10%;
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:40px;
     }
 
-    .hero{
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      background:radial-gradient(circle at center, rgba(255,212,0,0.05), transparent 60%), var(--bg);
-      padding:0 20px;
+    .card{
+      background:var(--glass);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:18px;
+      padding:24px;
+      box-shadow:0 0 20px rgba(255,212,0,0.08);
+      backdrop-filter:blur(10px);
+      height: auto; /* ensures it fits content */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
-    h1{
-      font-size:64px;
+
+    /* Optional: center the "Share" link visually but keep spacing tight */
+    .card > div:last-child {
+      margin-top: 10px; /* smaller gap below the button */
+}
+
+    .highlight h1{
       color:var(--yellow);
-      font-weight:800;
-      margin:0;
-      opacity:0;
-      transform:translateY(20px);
-      animation:fadeUp 1s forwards ease-out .2s;
+      font-size:42px;
+      margin:0 0 10px;
     }
-    h2{
-      font-size:20px;
+    .highlight h2{
       color:var(--muted);
-      margin-top:12px;
-      opacity:0;
-      transform:translateY(10px);
-      animation:fadeUp 1s forwards ease-out .6s;
+      font-size:16px;
+      margin:0 0 20px;
+      font-weight:400;
     }
+    .highlight p{
+      color:var(--muted);
+      line-height:1.6;
+      margin-bottom:20px;
+    }
+
+    .section-title{
+      color:var(--yellow);
+      font-weight:700;
+      margin-bottom:8px;
+    }
+
     .btns{
-      margin-top:32px;
       display:flex;
-      gap:20px;
+      gap:15px;
+      flex-wrap:wrap;
     }
     .btn{
-      padding:12px 22px;
+      padding:10px 18px;
       border-radius:10px;
       border:none;
       font-weight:700;
       cursor:pointer;
+      text-decoration:none;
       background:var(--yellow);
       color:#050505;
       transition:transform .2s;
-      text-decoration:none;
     }
     .btn:hover{transform:translateY(-3px)}
+
     .btn.secondary{
       background:transparent;
-      border:1px solid rgba(255,255,255,0.15);
+      border:1px solid rgba(255,255,255,0.2);
       color:var(--yellow);
     }
-    @keyframes fadeUp{
-      to{opacity:1;transform:translateY(0)}
-    }
+
     footer{
       text-align:center;
       padding:20px;
       color:var(--muted);
       background:rgba(0,0,0,0.6);
+      font-size:14px;
     }
   </style>
 </head>
@@ -127,17 +145,115 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to JazzRock Band</h1>
-    <h2>Where Jazz meets Rock — Discover our sound</h2>
-    <div class="btns">
-      <a href="grammy1.html" class="btn">Explore FYC Page</a>
-      <a href="#" class="btn secondary">Listen Now</a>
+  <main>
+    <div class="card highlight">
+      <h1>JazzRockBand</h1>
+      <h2>FOR YOUR CONSIDERATION — Best Rock / Jazz Crossover</h2>
+      <p>We are excited to announce our debut song submission. Self-produced, it traces blending the improvisational spirit of jazz with the raw energy of rock. Recorded with an independent spirit and a lot of late-night firelight.</p>
+      <p><strong>Released:</strong> 2025 · Independent · 10 tracks</p>
+      <h3 class="section-title">About the Project</h3>
+      <p><p>Step inside the shadows of 1960s Hollywood…<br>
+  <strong>“Hollywood Vampire”</strong> is not just a song—it’s a cinematic horror music experience blending gothic rock, thriller vibes, and graphic novel storytelling.</p>
+
+  <p>🎬 This mini-movie style music video follows a Vampire who arrives in Hollywood at the height of the 60s counterculture, crossing paths with Jim Morrison, Charles Manson, and the dark glamour of the Chateau Marmont. Along the way, he faces a seductive She-Devil determined to dethrone him.</p>
+
+  <p>If you’re into:</p>
+  <ul>
+    <li>🎶 Horror music / Goth music</li>
+    <li>🎥 Thriller & horror movie soundtracks</li>
+    <li>📚 Graphic novels & dark storytelling</li>
+    <li>🎧 Cinematic rock for music supervisors & filmmakers</li>
+  </ul>
+
+  <p>…then this is your next obsession.</p>
+
+  <p>⚡ The graphic novel, <em>"Hollywood Vampire: The Story of the Ongoings of Chateau Marmot"</em> coming October 2025, and the song share the same name: <strong>Hollywood Vampire.</strong></p>
+
+  <p>🦇 Step into the dark side of Hollywood.<br>
+  Subscribe + hit the 🔔 for more gothic tales in music form.</p>
+
+  <p>The Hollywood Vampire Anthem was recently released. It is available now on: Spotify, Apple Music and other streaming stations. Download or stream here:<br>
+  <a href="https://open.spotify.com/track/1F4g5ZLAN12exELrbMGLaJ?si=d4e5339282cf4f31&nd=1&dlsi=eeec3f9c979f4405" target="_blank">Listen on Spotify</a></p>
+
+  <p>Get notified of our upcoming launch events, author and composer talk backs at a comicon near you and more!<br>
+  Hit up Contact at <a href="https://www.jazzrocksinger.com/" target="_blank">https://www.jazzrocksinger.com/</a></p>
+
+  <p><strong>Hollywood Vampire</strong> was written and performed by JazzRock. She is the sole composer of the song. The song is registered under JazzRock at BMI and the U.S. Copyright Office.</p>
+
+  <p>Let us know in the comments what you think of the movie, the song, the dark history...</p>
+
+  <p><strong>About the graphic novel creator and film producer/director:</strong><br>
+  VrVendetta is the author and comic book illustrator of the upcoming graphic novel <em>"Hollywood Vampire"</em>. He is also the video director and producer of this amazing official "Hollywood Vampire Anthem" music video.<br>
+  For VrVendetta art and projects visit <a href="https://www.vrvendetta.com/" target="_blank">https://www.vrvendetta.com/</a></p>
+
+  <p><strong>Featured in this music video film:</strong><br>
+  Featured in this video is <strong>JazzRock</strong> — composer, performer and main artist aka @Jasminesandler.<br>
+  Supporting JazzRock in the video is singer/songwriter/dancer/pro actress @luanasandoval.<br>
+  Song produced by <strong>Brooklyn Native Studios.</strong></p></p>
+
+      <div class="btns">
+        <a href="#" class="btn">Listen on Spotify</a>
+        <a href="#" class="btn">Listen on Apple Music</a>
+        <a href="#" class="btn secondary">Download EPK</a>
+      </div>
     </div>
-  </section>
+
+    <div class="card">
+      <img src="HOLVAMP.png" alt="Album Cover" 
+     style="width:100%;height:auto;border-radius:10px;box-shadow:0 0 20px rgba(255,212,0,0.1);">
+      <h3 style="margin-top:20px;color:var(--yellow)">Best Music Video</h3>
+      <p style="color:var(--muted);margin:-6px 0 12px;font-size:14px;">Debut Music Video — 2025</p>
+      <a href="https://youtu.be/KSYsgr9onyg?si=XgYPPF6x3FWg4Ojc" class="btn" style="width:100%;text-align:center;">Play Full</a>
+      <div style="text-align:center;margin-top:15px;">
+        <a href="#" style="color:var(--muted);font-size:14px;text-decoration:none;">Share</a>
+      </div>
+    </div>
+  </main>
+
+  <main>
+    <div class="card highlight">
+      <h1>JazzRockBand</h1>
+      <h2>FOR YOUR CONSIDERATION — Best Rock / Jazz Crossover</h2>
+      <p>We are excited to announce our debut song submission. Self-produced, it traces blending the improvisational spirit of jazz with the raw energy of rock. Recorded with an independent spirit and a lot of late-night firelight.</p>
+      <p><strong>Released:</strong> 2025 · Independent · 10 tracks</p>
+      <h3 class="section-title">About the Project</h3>
+      <p>This project is a love letter to two genres. Expect syncopated grooves, distorted trumpet tones, driving basslines, and daring breakdowns. Great for playlists, film cues, and late-night drives.</p>
+
+      <div class="btns">
+        <a href="#" class="btn">Listen on Spotify</a>
+        <a href="#" class="btn">Listen on Apple Music</a>
+        <a href="#" class="btn secondary">Download EPK</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="HOLVAMP.png" alt="Album Cover" 
+     style="width:100%;height:auto;border-radius:10px;box-shadow:0 0 20px rgba(255,212,0,0.1);">
+      <h3 style="margin-top:20px;color:var(--yellow)">Best Metal Performance</h3>
+      <p style="color:var(--muted);margin:-6px 0 12px;font-size:14px;">Debut Music Video — 2025</p>
+      <a href="https://youtu.be/P_8F6zE3uec?si=8y-mGBF2A8xxQ2qR" class="btn" style="width:100%;text-align:center;">Play Full</a>
+      <div style="text-align:center;margin-top:15px;">
+        <a href="#" style="color:var(--muted);font-size:14px;text-decoration:none;">Share</a>
+      </div>
+    </div>
+  </main>
 
   <footer>
     © 2025 JazzRock Band — All rights reserved.
   </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const sections = document.querySelectorAll('.album-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
