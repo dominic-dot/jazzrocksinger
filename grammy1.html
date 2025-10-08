@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JazzRock Band | GRAMMY Consideration</title>
+  <title>JazzRock | GRAMMY Consideration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -41,6 +41,32 @@
       letter-spacing:0.03em;
       font-size:22px;
     }
+    .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between logo and text */
+}
+
+.logo img {
+  height: 45px;  /* adjust size */
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 122, 0, 0.6));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 15px rgba(255, 212, 0, 0.8));
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--yellow);
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(255, 122, 0, 0.6);
+}
     nav{
       display:flex;
       gap:20px;
@@ -123,12 +149,6 @@
     }
     .btn:hover{transform:translateY(-3px)}
 
-    .btn.secondary{
-      background:transparent;
-      border:1px solid rgba(255,255,255,0.2);
-      color:var(--yellow);
-    }
-
     footer{
       text-align:center;
       padding:20px;
@@ -140,7 +160,10 @@
 </head>
 <body>
   <header>
-    <div class="logo">JazzRock Band</div>
+    <div class="logo">
+  <img src="jazzrocklogo.png" alt="JazzRock Logo">
+  <span>JazzRock</span>
+</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="grammy1.html">For Your Consideration</a>
@@ -149,12 +172,20 @@
 
   <main>
     <div class="card highlight">
-      <h1>JazzRockBand</h1>
-      <h2>FOR YOUR CONSIDERATION — Best Rock / Jazz Crossover</h2>
-      <p>We are excited to announce our debut song submission. Self-produced, it traces blending the improvisational spirit of jazz with the raw energy of rock. Recorded with an independent spirit and a lot of late-night firelight.</p>
-      <p><strong>Released:</strong> 2025 · Independent · 10 tracks</p>
-      <h3 class="section-title">About the Project</h3>
-      <p><p><strong></strong>Hollywood Vampire song follows the up and coming graphic novel of the same name by VrVendetta. The Hollywood Vampire Story:</strong><br>
+      <h1>JazzRock</h1>
+      <h2>FOR YOUR CONSIDERATION — BEST MUSIC VIDEO CATEGORY</h2>
+      <p>I’m beyond excited to share that my original song <strong>“Hollywood Vampire”</strong> is being considered in the <strong>Rock and Metal</strong> categories of the <strong>GRAMMYs® 2026.</strong>
+
+This moment is truly special for me. “Hollywood Vampire” was born out of a deep creative drive to tell a story — one that blends the edge of rock, the intensity of metal, and the theatrical energy that defines my sound as an artist. It’s dark, powerful, and emotional, representing the transformation that happens when you face your inner shadows and turn them into strength.
+
+Creating this piece was a journey in itself — countless hours in the studio, experimenting with layers of sound, pushing limits, and chasing that perfect moment where music feels alive. I’m so grateful for the talented people behind the production who helped me shape this vision from an idea into something real and unforgettable.
+
+To see this song being recognized on a stage as iconic as the GRAMMYs is both humbling and exhilarating. It reminds me why I started making music — to move people, to tell stories, and to leave a mark that’s both raw and real.
+
+Thank you to everyone who has listened, supported, and believed in this project from the very beginning. Your energy fuels the art, and this milestone belongs to all of us. The journey is far from over — this is just the beginning.</p>
+      <p><strong>Released:</strong> 2025 </p>
+      <h3 class="section-title">About this Song</h3>
+      <p><p><strong>Hollywood Vampire song</strong> follows the up and coming graphic novel of the same name by VrVendetta. The Hollywood Vampire Story:</strong><br>
       <p>Set in late 60’s LA, Estienne, a long time resident of Chateau La Penombre was a fixture in the Hollywood socialite scene. He frequently held parties at his penthouse rental at the Chateau La Penombre. Legend has it that he was holding these parties as early as the 1920’s in the golden age of the silent movie era. His ageless appearance according to him is due to no sun exposure and drinking the highest quality red wine. Others claim it would have to be plastic surgery which had come along way in the 1960’s.</p>
 
       <p>As we get to know Estienne (The Hollywood Vampire) the going’s on at the Chateau we get introduced to Reynold. Later found out be Charles Manson’s spiritual advisor. Reynold was a student of the occult and claimed to be a student of Aleister Crowley.  He had a group that followed him. Their intentions were to conjure a demon. The Demon Astaroth. Known as one of the kings of hell. They successfully conjure Astaroth. Which takes form as a beautiful woman. And infiltrates Hollywood as a starlet (She is ultimately the Devil)</p>
@@ -165,18 +196,24 @@
       <p>As the story progresses Star plans to control Hollywood and send her message worldwide through the medium of movies. She kills indiscriminately. Even Estienne was never as brutal. The story includes ongoing killing by HV of Hollywood female celebrities, parties at the hotel featuring Jim Morrison and Charles Manson (and female followers) and other 60's celebrities. The celebs have no idea that HV is dangerous.</p>
 
       <p>Story will conclude as a showdown between Star, her followers and Estienne. The Hollywood Vampire will need to use all his knowledge of the occult to defeat this demon and restore Hollywood to it still corrupt but slightly less evil version of itself.</p>
-    
+
+      <p>The Hollywood Vampire Anthem was recently released. It is available now on: Spotify, Apple Music and other streaming stations. Download or stream here:<br>
+      <a href="https://open.spotify.com/track/1F4g5ZLAN12exELrbMGLaJ?si=d4e5339282cf4f31&nd=1&dlsi=eeec3f9c979f4405" target="_blank">Listen on Spotify</a></p>
+      <a href="https://open.spotify.com/track/1F4g5ZLAN12exELrbMGLaJ?si=d4e5339282cf4f31&nd=1&dlsi=eeec3f9c979f4405" target="_blank">Listen on Apple Music</a></p>
+
+      <p>Get notified of our upcoming launch events, author and composer talk backs at a comicon near you and more!<br>
+         Hit up Contact at <a href="https://www.jazzrocksinger.com/" target="_blank">https://www.jazzrocksinger.com/</a></p>
+      
       <div class="btns">
-        <a href="#" class="btn">Listen on Spotify</a>
+        <a href="https://open.spotify.com/track/1F4g5ZLAN12exELrbMGLaJ?si=d4e5339282cf4f31&nd=1&dlsi=eeec3f9c979f4405" target="_blank" class="btn">Listen on Spotify</a>
         <a href="#" class="btn">Listen on Apple Music</a>
-        <a href="#" class="btn secondary">Download EPK</a>
       </div>
     </div>
 
     <div class="card">
       <img src="HOLVAMP.png" alt="Album Cover" 
      style="width:100%;height:auto;border-radius:10px;box-shadow:0 0 20px rgba(255,212,0,0.1);">
-      <h3 style="margin-top:20px;color:var(--yellow)">Best Music Video</h3>
+      <h3 style="margin-top:20px;color:var(--yellow)">Hollywood Vampire</h3>
       <p style="color:var(--muted);margin:-6px 0 12px;font-size:14px;">Debut Music Video — 2025</p>
       <a href="https://youtu.be/KSYsgr9onyg?si=XgYPPF6x3FWg4Ojc" class="btn" style="width:100%;text-align:center;">Play Full</a>
       <div style="text-align:center;margin-top:15px;">
@@ -187,25 +224,41 @@
 
   <main>
     <div class="card highlight">
-      <h1>JazzRockBand</h1>
-      <h2>FOR YOUR CONSIDERATION — Best Rock / Jazz Crossover</h2>
-      <p>We are excited to announce our debut song submission. Self-produced, it traces blending the improvisational spirit of jazz with the raw energy of rock. Recorded with an independent spirit and a lot of late-night firelight.</p>
-      <p><strong>Released:</strong> 2025 · Independent · 10 tracks</p>
-      <h3 class="section-title">About the Project</h3>
-      <p>This project is a love letter to two genres. Expect syncopated grooves, distorted trumpet tones, driving basslines, and daring breakdowns. Great for playlists, film cues, and late-night drives.</p>
+      <h1>JazzRock</h1>
+      <h2>FOR YOUR CONSIDERATION — BEST METAL PERFORMANCE CATEGORY</h2>
+      <p>I’m incredibly proud to share that my original song <strong>“Monsta”</strong> is being considered in the <strong>Rock and Metal</strong> categories of the <strong>GRAMMYs® 2026.</strong>
 
+“Monsta” is more than just a song — it’s a reflection of power, emotion, and transformation. It dives deep into the feeling of fighting your inner chaos, breaking free from fear, and embracing the parts of yourself that the world may not always understand. It’s about strength in vulnerability — that raw, untamed energy that lives inside every artist and every fighter.
+
+This track was built from the ground up with passion, sweat, and countless late nights in the studio. Every beat, every riff, every vocal line was crafted to hit with intensity — to capture that rush of being completely consumed by the music.
+
+I’m deeply grateful to the incredible people behind the production who helped bring this vision to life — those who believed in the sound, the story, and the message of “Monsta.” Their creativity and dedication made this song what it is today.
+
+To see “Monsta” being recognized at this level is truly an honor. It’s a reminder that music has the power to connect us through emotion, energy, and truth. Thank you to everyone who continues to listen, support, and believe in what I create. This is just the start of something bigger — and I can’t wait to share what comes next.
+</p>
+      <p><strong>Released:</strong> 2023 </p>
+      <h3 class="section-title">About this Song</h3>
+      <p>The song and the story MONSTA are intentionally strong, haunting and gothic. MONSTA is both literal and metaphoric. It is the monster we all have inside of us - those who experienced trauma. It is to show that the trauma that made us evil or gave us the propensity to think evil - can be defeated , hence " I rip my skin, yeah I let him out, no more MONSTA in this bed i shout..... The bed represents both our entire world of serenity and the physical bed we sleep in.</p>
+
+      <p>It shows the most grotesque of all dreamed nightmare-based monsters  who kill children, who are sociopaths, to make a huge visible impact on the extreme that trauma can bring. And it is poignant that it is the children - as the MONSTA is the child who never received love - he/she/it has noone to hug, nowhere to release his anger. The MONSTA can only throw his/her anger out into the world, trying to find, town by town, a way to push it off to others and have them absorb his/her misery.</p>
+
+      <p>The story of the traditional Hollywood monster types (Frankenstein, Dracula) lead in the story , setting the stage for what has become Halloween favorites of the spooky season. This MONSTA is different though. He is too real - he has been internalized , in all of us - "The MONSTA ripping down your throat" He is the one who causes us to say harmful things. To act in ways that are in line with the Bible's original "Seven Deadly Sins" And of these, pride, envy and wrath being the three the most identifiable with the MONSTA and those affected by trauma, who have been unable to release it in a healthy way.</p>
+
+      <p>The story of the MONSTA spirals throughout the song. His envy, anger, hatefulness and need to kill growing only stronger the more he is ignored - he needs to be seen. His brain is "frozen" in growth. He is stunted, tainted, anxious, angry. The worst kind.</p>
+
+      <p>We , who have been affected by his trauma, must bury him "6 feet down" to escape the fury of his need to destroy and dissipate all that is good. In the end, he reviews the world he has divided and consumes the last of the good blood. This gluttony absorbs and kills him. Only to be brought back to life by the next repeat cycle of trauma.</p>
+      
       <div class="btns">
-        <a href="#" class="btn">Listen on Spotify</a>
-        <a href="#" class="btn">Listen on Apple Music</a>
-        <a href="#" class="btn secondary">Download EPK</a>
+        <a href="https://open.spotify.com/track/345B1vkO6x8I1SmkAZd0UZ?si=8dbf9790734445d8" target="_blank" class="btn">Listen on Spotify</a>
+        <a href="https://music.apple.com/us/song/monsta/1774630976" target="_blank" class="btn">Listen on Apple Music</a>
       </div>
     </div>
 
     <div class="card">
       <img src="HOLVAMP.png" alt="Album Cover" 
      style="width:100%;height:auto;border-radius:10px;box-shadow:0 0 20px rgba(255,212,0,0.1);">
-      <h3 style="margin-top:20px;color:var(--yellow)">Best Metal Performance</h3>
-      <p style="color:var(--muted);margin:-6px 0 12px;font-size:14px;">Debut Music Video — 2025</p>
+      <h3 style="margin-top:20px;color:var(--yellow)">MONSTA</h3>
+      <p style="color:var(--muted);margin:-6px 0 12px;font-size:14px;">Debut Music Video — 2023</p>
       <a href="https://youtu.be/P_8F6zE3uec?si=8y-mGBF2A8xxQ2qR" class="btn" style="width:100%;text-align:center;">Play Full</a>
       <div style="text-align:center;margin-top:15px;">
         <a href="#" style="color:var(--muted);font-size:14px;text-decoration:none;">Share</a>
@@ -214,7 +267,7 @@
   </main>
 
   <footer>
-    © 2025 JazzRock Band — All rights reserved.
+    © 2025 JazzRock — All rights reserved.
   </footer>
 
   <script>
@@ -232,6 +285,3 @@
   </script>
 </body>
 </html>
-
-
-
